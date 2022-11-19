@@ -1,0 +1,10 @@
+#login{
+    width: max-content;
+    margin-top: 11%;
+    margin-bottom: 11%;
+}
+
+.nav-link{
+    color: white !important;
+    cursor: pointer;
+}
