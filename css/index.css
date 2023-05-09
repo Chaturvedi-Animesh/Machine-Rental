@@ -73,13 +73,13 @@ footer ul {
 }
 
 .product-description {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.c-img{
+.c-img {
   height: 650px;
   object-fit: fill;
 }
