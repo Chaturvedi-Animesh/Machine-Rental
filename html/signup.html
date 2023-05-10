@@ -22,7 +22,7 @@
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="index.html">The Krishi Tools Ltd.</a>
+          <a class="navbar-brand text-white" href="index.php">The Krishi Tools Ltd.</a>
           <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon bg-light"></span>
@@ -30,7 +30,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav text-white">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.php">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="aboutus.html">About Us</a>
@@ -52,8 +52,8 @@
 
     <div class="limiter">
         <div class="container-login100" style="background-image: url('../images/login-bg-img.jpg');">
-            <div class="wrap-login100">
-                <form class="login100-form validate-form">
+            <div class="wrap-login100" style="margin-top: 60px;">
+                <form class="login100-form validate-form" action="../php/register_a.php" method="post" enctype="multipart/form-data">
                     <span class="login100-form-logo">
                         <i class="zmdi zmdi-landscape"></i>
                     </span>
@@ -62,28 +62,33 @@
                         Sign Up
                     </span>
 
-                    <div class="wrap-input100 validate-input" data-validate="Enter name">
-                        <input class="input100" type="text" name="name">
-                        <span class="focus-input100" data-placeholder="Name"></span>
+                    <div class="wrap-input100 validate-input" data-validate="Enter First Name">
+                        <input class="input100" type="text" name="first_name" placeholder="First Name">
+                        <span class="focus-input100" data-placeholder="&#xf207;"></span>
                     </div>
-                    <div class="wrap-input100 validate-input" data-validate="Enter username">
-                        <input class="input100" type="text" name="username">
-                        <span class="focus-input100" data-placeholder="Username"></span>
+                    <div class="wrap-input100 validate-input" data-validate="Enter Last Name">
+                        <input class="input100" type="text" name="last_name" placeholder="Last Name">
+                        <span class="focus-input100" data-placeholder="&#xf205;"></span>
                     </div>
 
-                    <div class="wrap-input100 validate-input" data-validate="Enter age">
-                        <input class="input100" type="number" name="age">
-                        <span class="focus-input100" data-placeholder="Age"></span>
+                    <div class="wrap-input100 validate-input" data-validate="Enter Email">
+                        <input class="input100" type="email" name="email" placeholder="Email">
+                        <span class="focus-input100" data-placeholder="&#xf15a;"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input" data-validate="Enter password">
-                        <input class="input100" type="password" name="pass">
-                        <span class="focus-input100" data-placeholder="Password"></span>
+                        <input class="input100" type="password" name="pass" placeholder="Password">
+                        <span class="focus-input100" data-placeholder="&#xf183;"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Enter password">
+                        <input class="input100" type="file" name="file" placeholder="Password">
+                        <span class="focus-input100" data-placeholder="&#xf22a;"></span>
                     </div>
 
 
                     <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
+                        <button class="login100-form-btn" name="save">
                             Sign Up
                         </button>
                     </div>
@@ -116,7 +121,7 @@
                         </h6>
 
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.php">Home</a></li>
                             <li><a href="aboutus.html">About Us</a></li>
                             <li><a href="contactUs.html">Contact Us</a></li>
                             <li><a href="login.html">Login</a></li>
@@ -144,7 +149,7 @@
 
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2023 Copyright:
-            <a class="text-reset fw-bold" href="index.html">thekrishitools.com</a>
+            <a class="text-reset fw-bold" href="index.php">thekrishitools.com</a>
         </div>
 
     </footer>
